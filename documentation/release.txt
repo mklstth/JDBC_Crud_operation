@@ -1,0 +1,30 @@
+Release note
+
+--Header--
+Product Name: JDBC_CRUD
+Release Number: 1
+Version Number: 1.0
+Release Date: 28/09/2020
+
+--Overview-- 
+Test the JDBC capabilities and implement CRUD operations with it on a Order handling database.
+For testing:
+    the Test methods use the same DB connection as the Main application. Therefor primary and foreign key collisions can happen.
+         The right order of the test is to run them is:
+              1, InsertServiceTest, to have some elements in the DB to work on
+              2, UpdateServiceTest, to change the name of one of the test elements.
+              3, SelectServiceTest, to see that we are able to select element in the tables.
+              4, Delete ServiceTest, to Delete all the unwanted test data from the DB.
+
+Demonstrated: 
+	MVC
+	Validations
+	Modularity - Decompose your code where possible
+	Maven Project
+	
+	
+--Issue Summary--
+N/A. Applicable in future versions. 
+
+--End-user Impact--
+Wrong order of test runs can result unexpected errors. 
